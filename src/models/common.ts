@@ -1,19 +1,27 @@
 export interface PaginationParams {
-  _limit: number
-  _page: number
-  _total: number
+  totalPage: number
+  items: number
+  currentPage: number
 }
 
 export interface ListResponse<T> {
-  data: T[]
-  pagination?: PaginationParams
+  result: T[]
+  totalPage: number
+  items: number
+  currentPage: number
 }
 
 export interface ListParams {
-  _page: number
-  _limit: number
-  _sort: string
-  _order: 'asc' | 'desc'
+  page: number
+  limit: number
 
   [key: string]: any
 }
+
+export interface Token {
+  token: string,
+  exp: string
+}
+export interface AccessToken extends Token {}
+export interface RefreshToken extends Token {}
+

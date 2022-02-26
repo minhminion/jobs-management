@@ -31,7 +31,7 @@ axiosClient.interceptors.response.use(function (response) {
 });
 
 export function authHeader(): AxiosRequestHeaders {
-  const token = cookie.getCookie('token')
+  const token = cookie.getCookie('accessToken')
   if(token) return { Authorization: `Bearer ${token}`}
   return {}
 }

@@ -1,6 +1,5 @@
+import { Card, Tabs } from 'antd'
 import React from 'react'
-import { Tabs, Card } from 'antd'
-import { AppleOutlined, AndroidOutlined } from '@ant-design/icons'
 import LoginPage from './LoginPage'
 import RegisterPage from './RegisterPage'
 

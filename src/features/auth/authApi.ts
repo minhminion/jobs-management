@@ -1,5 +1,5 @@
 import { axiosClient } from "../../api/axiosClient"
-import { User } from "../../models"
+import { AccessToken, RefreshToken, User } from "../../models"
 
 export interface LoginPayload {
   email: string,
@@ -8,7 +8,8 @@ export interface LoginPayload {
 
 export interface AuthResponse {
   user?: User,
-  token?: string
+  accessToken?: AccessToken
+  refreshToken?: RefreshToken
 
   msg?:string 
 }

@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { useSelector } from 'react-redux'
 import { RootState } from '../../app/store'
 import { User } from '../../models'
 import { LoginPayload } from './authApi'

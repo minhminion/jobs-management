@@ -1,8 +1,8 @@
-import { configureStore, combineReducers, getDefaultMiddleware } from '@reduxjs/toolkit'
 import createSagaMiddleware from '@redux-saga/core'
-import { rootSaga } from './rootSaga'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import authReducer, { AuthState } from '../features/auth/authSlice'
 import { cookie } from '../utils'
+import { rootSaga } from './rootSaga'
 
 const sagaMiddleware = createSagaMiddleware()
 
